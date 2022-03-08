@@ -1,0 +1,958 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link href="index.css" rel="stylesheet" type="text/css"/>
+   <script src="script.js"></script>
+   <title>SpeeDiet</title>
+</head>
+<body>
+
+   <h1 class="title">SPEEDIET LIST</h1>
+   
+   <div>
+      <table style="width:793px">
+         <tr>
+            <th>STARTER 1 [5]</th>
+            <th>STARTER 2 [6]</th>
+            <th>MAIN 1 [5]</th>
+            <th>MAIN 2 [6]</th>
+            <th>DESSERT 1 [5]</th>
+            <th>DESSERT 2 [6]</th>
+            <th>GLOBAL 1 [7]</th>
+            <th>GLOBAL 2 [8]</th>
+            <th>GLOBAL 3 [9]</th>
+         </tr>
+         <tr>
+            <td>
+               <div class="inputContainerFunctionarea">
+                  <input autofocus type="text" id="starter1"  placeholder="new starter">
+                  <span class="alwaysDisplayFunctionarea"></span>
+               </div>
+            </td>
+            <td>
+               <div class="inputContainerFunctionarea">
+                  <input type="text" id="starter2"  placeholder="new starter">
+                  <span class="alwaysDisplayFunctionarea"></span>
+               </div>
+            </td>
+            <td>
+               <div class="inputContainerFunctionarea">
+                  <input type="text" id="main1"  placeholder="new main">
+                  <span class="alwaysDisplayFunctionarea"></span>
+               </div>
+            </td>
+            <td>
+               <div class="inputContainerFunctionarea">
+                  <input type="text" id="main2"  placeholder="new main">
+                  <span class="alwaysDisplayFunctionarea"></span>
+               </div>
+            </td>
+            <td>
+               <div class="inputContainerFunctionarea">
+                  <input type="text" id="dessert1"  placeholder="new dessert">
+                  <span class="alwaysDisplayFunctionarea"></span>
+               </div>
+            </td>
+            <td>
+               <div class="inputContainerFunctionarea">
+                  <input type="text" id="dessert2" placeholder="new dessert">
+                  <span class="alwaysDisplayFunctionarea"></span>
+               </div>
+            </td>
+            <td style="width: 84px; font-size: 12px;">DELETE</td>
+            <td style="width: 84px; font-size: 12px;">ABSOLUTE</td>
+            <td style="width: 84px; font-size: 12px;">TURMIX</td>
+            
+         </tr>
+      </table>
+
+   </div>​
+ 
+   
+
+   <div>
+      <table style="width:794px">
+      <tr> <!-- tr tag: contains a row-->
+         <th>USER</th>
+         <th>STARTER</th>
+         <th>MAIN</th>
+         <th>DESSERT</th>
+         <th>OBSERV</th>
+      </tr> 
+      <tr>
+         <td>1</td> <!-- td tag: contains each cell in the row-->
+         <td>
+            <div class="inputContainer">
+               <input type="text" readonly onkeypress="pressReaction1A(event)">
+               <span class="alwaysDisplay" id="hab1platA"></span>
+            </div>
+         </td>
+         <td>
+            <div class="inputContainer">
+               <input type="text" readonly onkeypress="pressReaction1B(event)"  >
+               <span class="alwaysDisplay" id="hab1platB"></span>
+            </div>
+         </td>
+         <td>
+            <div class="inputContainer">
+               <input type="text" readonly onkeypress="pressReaction1C(event)"  >
+               <span class="alwaysDisplay" id="hab1platC"></span>
+            </div>
+         </td>
+         <td>
+            <input type="text">
+         </td>
+      </tr>
+      <tr>
+         <td>2</td>
+         
+         <td>
+            <div class="inputContainer">
+               <input type="text" readonly onkeypress="pressReaction2A(event)"  >
+               <span class="alwaysDisplay" id="hab2platA"></span>
+            </div>
+         </td>
+         <td>
+            <div class="inputContainer">
+               <input type="text" readonly onkeypress="pressReaction2B(event)"  >
+               <span class="alwaysDisplay" id="hab2platB"></span>
+            </div>
+         </td>
+         <td>
+            <div class="inputContainer">
+               <input type="text" readonly onkeypress="pressReaction2C(event)"  >
+               <span class="alwaysDisplay" id="hab2platC"></span>
+            </div>
+         </td>
+         <td>
+            <input type="text">
+         </td>
+      </tr>
+      <tr>
+         <td>3</td>
+         
+         <td>
+            <div class="inputContainer">
+               <input type="text" readonly onkeypress="pressReaction3A(event)"  >
+               <span class="alwaysDisplay" id="hab3platA"></span>
+            </div>
+         </td>
+         <td>
+            <div class="inputContainer">
+               <input type="text" readonly onkeypress="pressReaction3B(event)"  >
+               <span class="alwaysDisplay" id="hab3platB"></span>
+            </div>
+         </td>
+         <td>
+            <div class="inputContainer">
+               <input type="text" readonly onkeypress="pressReaction3C(event)"  >
+               <span class="alwaysDisplay" id="hab3platC"></span>
+            </div>
+         </td>
+         <td>
+            <input type="text">
+         </td>
+      </tr>
+
+      <tr>
+         <td>4</td>
+         
+         <td>
+            <div class="inputContainer">
+               <input type="text" readonly onkeypress="pressReaction4A(event)"  >
+               <span class="alwaysDisplay" id="hab4platA"></span>
+            </div>
+         </td>
+         <td>
+            <div class="inputContainer">
+               <input type="text" readonly onkeypress="pressReaction4B(event)"  >
+               <span class="alwaysDisplay" id="hab4platB"></span>
+            </div>
+         </td>
+         <td>
+            <div class="inputContainer">
+               <input type="text" readonly onkeypress="pressReaction4C(event)"  >
+               <span class="alwaysDisplay" id="hab4platC"></span>
+            </div>
+         </td>
+         <td>
+            <input type="text">
+         </td>
+      </tr>
+
+      <tr>
+         <td>5</td>
+         
+         <td>
+            <div class="inputContainer">
+               <input type="text" readonly onkeypress="pressReaction5A(event)"  >
+               <span class="alwaysDisplay" id="hab5platA"></span>
+            </div>
+         </td>
+         <td>
+            <div class="inputContainer">
+               <input type="text" readonly onkeypress="pressReaction5B(event)"  >
+               <span class="alwaysDisplay" id="hab5platB"></span>
+            </div>
+         </td>
+         <td>
+            <div class="inputContainer">
+               <input type="text" readonly onkeypress="pressReaction5C(event)"  >
+               <span class="alwaysDisplay" id="hab5platC"></span>
+            </div>
+         </td>
+         <td>
+            <input type="text">
+         </td>
+      </tr>
+
+      <tr>
+         <td>6</td>
+         
+         <td>
+            <div class="inputContainer">
+               <input type="text" readonly onkeypress="pressReaction6A(event)"  >
+               <span class="alwaysDisplay" id="hab6platA"></span>
+            </div>
+         </td>
+         <td>
+            <div class="inputContainer">
+               <input type="text" readonly onkeypress="pressReaction6B(event)"  >
+               <span class="alwaysDisplay" id="hab6platB"></span>
+            </div>
+         </td>
+         <td>
+            <div class="inputContainer">
+               <input type="text" readonly onkeypress="pressReaction6C(event)"  >
+               <span class="alwaysDisplay" id="hab6platC"></span>
+            </div>
+         </td>
+         <td>
+            <input type="text">
+         </td>
+      </tr>
+
+      <tr>
+         <td>7</td>
+         
+         <td>
+            <div class="inputContainer">
+               <input type="text" readonly onkeypress="pressReaction7A(event)"  >
+               <span class="alwaysDisplay" id="hab7platA"></span>
+            </div>
+         </td>
+         <td>
+            <div class="inputContainer">
+               <input type="text" readonly onkeypress="pressReaction7B(event)"  >
+               <span class="alwaysDisplay" id="hab7platB"></span>
+            </div>
+         </td>
+         <td>
+            <div class="inputContainer">
+               <input type="text" readonly onkeypress="pressReaction7C(event)"  >
+               <span class="alwaysDisplay" id="hab7platC"></span>
+            </div>
+         </td>
+         <td>
+            <input type="text">
+         </td>
+      </tr>
+
+      <tr>
+         <td>8</td>
+         
+         <td>
+            <div class="inputContainer">
+               <input type="text" readonly onkeypress="pressReaction8A(event)"  >
+               <span class="alwaysDisplay" id="hab8platA"></span>
+            </div>
+         </td>
+         <td>
+            <div class="inputContainer">
+               <input type="text" readonly onkeypress="pressReaction8B(event)"  >
+               <span class="alwaysDisplay" id="hab8platB"></span>
+            </div>
+         </td>
+         <td>
+            <div class="inputContainer">
+               <input type="text" readonly onkeypress="pressReaction8C(event)"  >
+               <span class="alwaysDisplay" id="hab8platC"></span>
+            </div>
+         </td>
+         <td>
+            <input type="text">
+         </td>
+      </tr>
+
+      <tr>
+         <td>9</td>
+         
+         <td>
+            <div class="inputContainer">
+               <input type="text" readonly onkeypress="pressReaction9A(event)"  >
+               <span class="alwaysDisplay" id="hab9platA"></span>
+            </div>
+         </td>
+         <td>
+            <div class="inputContainer">
+               <input type="text" readonly onkeypress="pressReaction9B(event)"  >
+               <span class="alwaysDisplay" id="hab9platB"></span>
+            </div>
+         </td>
+         <td>
+            <div class="inputContainer">
+               <input type="text" readonly onkeypress="pressReaction9C(event)"  >
+               <span class="alwaysDisplay" id="hab9platC"></span>
+            </div>
+         </td>
+         <td>
+            <input type="text">
+         </td>
+      </tr>
+
+      <tr>
+         <td>10</td>
+         
+         <td>
+            <div class="inputContainer">
+               <input type="text" readonly onkeypress="pressReaction10A(event)"  >
+               <span class="alwaysDisplay" id="hab10platA"></span>
+            </div>
+         </td>
+         <td>
+            <div class="inputContainer">
+               <input type="text" readonly onkeypress="pressReaction10B(event)"  >
+               <span class="alwaysDisplay" id="hab10platB"></span>
+            </div>
+         </td>
+         <td>
+            <div class="inputContainer">
+               <input type="text" readonly onkeypress="pressReaction10C(event)"  >
+               <span class="alwaysDisplay" id="hab10platC"></span>
+            </div>
+         </td>
+         <td>
+            <input type="text">
+         </td>
+      </tr>
+
+      <tr>
+         <td>11</td>
+         
+         <td>
+            <div class="inputContainer">
+               <input type="text" readonly onkeypress="pressReaction11A(event)"  >
+               <span class="alwaysDisplay" id="hab11platA"></span>
+            </div>
+         </td>
+         <td>
+            <div class="inputContainer">
+               <input type="text" readonly onkeypress="pressReaction11B(event)"  >
+               <span class="alwaysDisplay" id="hab11platB"></span>
+            </div>
+         </td>
+         <td>
+            <div class="inputContainer">
+               <input type="text" readonly onkeypress="pressReaction11C(event)"  >
+               <span class="alwaysDisplay" id="hab11platC"></span>
+            </div>
+         </td>
+         <td>
+            <input type="text">
+         </td>
+      </tr>
+
+      <tr>
+         <td>12</td>
+         
+         <td>
+            <div class="inputContainer">
+               <input type="text" readonly onkeypress="pressReaction12A(event)"  >
+               <span class="alwaysDisplay" id="hab12platA"></span>
+            </div>
+         </td>
+         <td>
+            <div class="inputContainer">
+               <input type="text" readonly onkeypress="pressReaction12B(event)"  >
+               <span class="alwaysDisplay" id="hab12platB"></span>
+            </div>
+         </td>
+         <td>
+            <div class="inputContainer">
+               <input type="text" readonly onkeypress="pressReaction12C(event)"  >
+               <span class="alwaysDisplay" id="hab12platC"></span>
+            </div>
+         </td>
+         <td>
+            <input type="text">
+         </td>
+      </tr>
+
+      <tr>
+         <td>13</td>
+         
+         <td>
+            <div class="inputContainer">
+               <input type="text" readonly onkeypress="pressReaction13A(event)"  >
+               <span class="alwaysDisplay" id="hab13platA"></span>
+            </div>
+         </td>
+         <td>
+            <div class="inputContainer">
+               <input type="text" readonly onkeypress="pressReaction13B(event)"  >
+               <span class="alwaysDisplay" id="hab13platB"></span>
+            </div>
+         </td>
+         <td>
+            <div class="inputContainer">
+               <input type="text" readonly onkeypress="pressReaction13C(event)"  >
+               <span class="alwaysDisplay" id="hab13platC"></span>
+            </div>
+         </td>
+         <td>
+            <input type="text">
+         </td>
+      </tr>
+
+      <tr>
+         <td>14</td>
+         
+         <td>
+            <div class="inputContainer">
+               <input type="text" readonly onkeypress="pressReaction14A(event)"  >
+               <span class="alwaysDisplay" id="hab14platA"></span>
+            </div>
+         </td>
+         <td>
+            <div class="inputContainer">
+               <input type="text" readonly onkeypress="pressReaction14B(event)"  >
+               <span class="alwaysDisplay" id="hab14platB"></span>
+            </div>
+         </td>
+         <td>
+            <div class="inputContainer">
+               <input type="text" readonly onkeypress="pressReaction14C(event)"  >
+               <span class="alwaysDisplay" id="hab14platC"></span>
+            </div>
+         </td>
+         <td>
+            <input type="text">
+         </td>
+      </tr>
+
+      <tr>
+         <td>15</td>
+         
+         <td>
+            <div class="inputContainer">
+               <input type="text" readonly onkeypress="pressReaction15A(event)"  >
+               <span class="alwaysDisplay" id="hab15platA"></span>
+            </div>
+         </td>
+         <td>
+            <div class="inputContainer">
+               <input type="text" readonly onkeypress="pressReaction15B(event)"  >
+               <span class="alwaysDisplay" id="hab15platB"></span>
+            </div>
+         </td>
+         <td>
+            <div class="inputContainer">
+               <input type="text" readonly onkeypress="pressReaction15C(event)"  >
+               <span class="alwaysDisplay" id="hab15platC"></span>
+            </div>
+         </td>
+         <td>
+            <input type="text">
+         </td>
+      </tr>
+
+      <tr>
+         <td>16</td>
+         
+         <td>
+            <div class="inputContainer">
+               <input type="text" readonly onkeypress="pressReaction16A(event)"  >
+               <span class="alwaysDisplay" id="hab16platA"></span>
+            </div>
+         </td>
+         <td>
+            <div class="inputContainer">
+               <input type="text" readonly onkeypress="pressReaction16B(event)"  >
+               <span class="alwaysDisplay" id="hab16platB"></span>
+            </div>
+         </td>
+         <td>
+            <div class="inputContainer">
+               <input type="text" readonly onkeypress="pressReaction16C(event)"  >
+               <span class="alwaysDisplay" id="hab16platC"></span>
+            </div>
+         </td>
+         <td>
+            <input type="text">
+         </td>
+      </tr>
+
+      <tr>
+         <td>17</td>
+         
+         <td>
+            <div class="inputContainer">
+               <input type="text" readonly onkeypress="pressReaction17A(event)"  >
+               <span class="alwaysDisplay" id="hab17platA"></span>
+            </div>
+         </td>
+         <td>
+            <div class="inputContainer">
+               <input type="text" readonly onkeypress="pressReaction17B(event)"  >
+               <span class="alwaysDisplay" id="hab17platB"></span>
+            </div>
+         </td>
+         <td>
+            <div class="inputContainer">
+               <input type="text" readonly onkeypress="pressReaction17C(event)"  >
+               <span class="alwaysDisplay" id="hab17platC"></span>
+            </div>
+         </td>
+         <td>
+            <input type="text">
+         </td>
+      </tr>
+
+      <tr>
+         <td>18</td>
+         
+         <td>
+            <div class="inputContainer">
+               <input type="text" readonly onkeypress="pressReaction18A(event)"  >
+               <span class="alwaysDisplay" id="hab18platA"></span>
+            </div>
+         </td>
+         <td>
+            <div class="inputContainer">
+               <input type="text" readonly onkeypress="pressReaction18B(event)"  >
+               <span class="alwaysDisplay" id="hab18platB"></span>
+            </div>
+         </td>
+         <td>
+            <div class="inputContainer">
+               <input type="text" readonly onkeypress="pressReaction18C(event)"  >
+               <span class="alwaysDisplay" id="hab18platC"></span>
+            </div>
+         </td>
+         <td>
+            <input type="text">
+         </td>
+      </tr>
+
+      <tr>
+         <td>19</td>
+         
+         <td>
+            <div class="inputContainer">
+               <input type="text" readonly onkeypress="pressReaction19A(event)"  >
+               <span class="alwaysDisplay" id="hab19platA"></span>
+            </div>
+         </td>
+         <td>
+            <div class="inputContainer">
+               <input type="text" readonly onkeypress="pressReaction19B(event)"  >
+               <span class="alwaysDisplay" id="hab19platB"></span>
+            </div>
+         </td>
+         <td>
+            <div class="inputContainer">
+               <input type="text" readonly onkeypress="pressReaction19C(event)"  >
+               <span class="alwaysDisplay" id="hab19platC"></span>
+            </div>
+         </td>
+         <td>
+            <input type="text">
+         </td>
+      </tr>
+
+
+
+
+
+      <tr>
+         <td>20</td>
+         
+         <td>
+            <div class="inputContainer">
+               <input type="text" readonly onkeypress="pressReaction20A(event)"  >
+               <span class="alwaysDisplay" id="hab20platA"></span>
+            </div>
+         </td>
+         <td>
+            <div class="inputContainer">
+               <input type="text" readonly onkeypress="pressReaction20B(event)"  >
+               <span class="alwaysDisplay" id="hab20platB"></span>
+            </div>
+         </td>
+         <td>
+            <div class="inputContainer">
+               <input type="text" readonly onkeypress="pressReaction20C(event)"  >
+               <span class="alwaysDisplay" id="hab20platC"></span>
+            </div>
+         </td>
+         <td>
+            <input type="text">
+         </td>
+      </tr>
+
+
+
+      <tr>
+         <td>21</td>
+         
+         <td>
+            <div class="inputContainer">
+               <input type="text" readonly onkeypress="pressReaction21A(event)"  >
+               <span class="alwaysDisplay" id="hab21platA"></span>
+            </div>
+         </td>
+         <td>
+            <div class="inputContainer">
+               <input type="text" readonly onkeypress="pressReaction21B(event)"  >
+               <span class="alwaysDisplay" id="hab21platB"></span>
+            </div>
+         </td>
+         <td>
+            <div class="inputContainer">
+               <input type="text" readonly onkeypress="pressReaction21C(event)"  >
+               <span class="alwaysDisplay" id="hab21platC"></span>
+            </div>
+         </td>
+         <td>
+            <input type="text">
+         </td>
+      </tr>
+
+
+
+      <tr>
+         <td>22</td>
+         
+         <td>
+            <div class="inputContainer">
+               <input type="text" readonly onkeypress="pressReaction22A(event)"  >
+               <span class="alwaysDisplay" id="hab22platA"></span>
+            </div>
+         </td>
+         <td>
+            <div class="inputContainer">
+               <input type="text" readonly onkeypress="pressReaction22B(event)"  >
+               <span class="alwaysDisplay" id="hab22platB"></span>
+            </div>
+         </td>
+         <td>
+            <div class="inputContainer">
+               <input type="text" readonly onkeypress="pressReaction22C(event)"  >
+               <span class="alwaysDisplay" id="hab22platC"></span>
+            </div>
+         </td>
+         <td>
+            <input type="text">
+         </td>
+      </tr>
+
+
+      <tr>
+         <td>23</td>
+         
+         <td>
+            <div class="inputContainer">
+               <input type="text" readonly onkeypress="pressReaction23A(event)"  >
+               <span class="alwaysDisplay" id="hab23platA"></span>
+            </div>
+         </td>
+         <td>
+            <div class="inputContainer">
+               <input type="text" readonly onkeypress="pressReaction23B(event)"  >
+               <span class="alwaysDisplay" id="hab23platB"></span>
+            </div>
+         </td>
+         <td>
+            <div class="inputContainer">
+               <input type="text" readonly onkeypress="pressReaction23C(event)"  >
+               <span class="alwaysDisplay" id="hab23platC"></span>
+            </div>
+         </td>
+         <td>
+            <input type="text">
+         </td>
+      </tr>
+
+      <tr>
+         <td>24</td>
+         
+         <td>
+            <div class="inputContainer">
+               <input type="text" readonly onkeypress="pressReaction24A(event)"  >
+               <span class="alwaysDisplay" id="hab24platA"></span>
+            </div>
+         </td>
+         <td>
+            <div class="inputContainer">
+               <input type="text" readonly onkeypress="pressReaction24B(event)"  >
+               <span class="alwaysDisplay" id="hab24platB"></span>
+            </div>
+         </td>
+         <td>
+            <div class="inputContainer">
+               <input type="text" readonly onkeypress="pressReaction24C(event)"  >
+               <span class="alwaysDisplay" id="hab24platC"></span>
+            </div>
+         </td>
+         <td>
+            <input type="text">
+         </td>
+      </tr>
+
+      <tr>
+         <td>25</td>
+         
+         <td>
+            <div class="inputContainer">
+               <input type="text" readonly onkeypress="pressReaction25A(event)"  >
+               <span class="alwaysDisplay" id="hab25platA"></span>
+            </div>
+         </td>
+         <td>
+            <div class="inputContainer">
+               <input type="text" readonly onkeypress="pressReaction25B(event)"  >
+               <span class="alwaysDisplay" id="hab25platB"></span>
+            </div>
+         </td>
+         <td>
+            <div class="inputContainer">
+               <input type="text" readonly onkeypress="pressReaction25C(event)"  >
+               <span class="alwaysDisplay" id="hab25platC"></span>
+            </div>
+         </td>
+         <td>
+            <input type="text">
+         </td>
+      </tr>
+
+      <tr>
+         <td>26</td>
+         
+         <td>
+            <div class="inputContainer">
+               <input type="text" readonly onkeypress="pressReaction26A(event)"  >
+               <span class="alwaysDisplay" id="hab26platA"></span>
+            </div>
+         </td>
+         <td>
+            <div class="inputContainer">
+               <input type="text" readonly onkeypress="pressReaction26B(event)"  >
+               <span class="alwaysDisplay" id="hab26platB"></span>
+            </div>
+         </td>
+         <td>
+            <div class="inputContainer">
+               <input type="text" readonly onkeypress="pressReaction26C(event)"  >
+               <span class="alwaysDisplay" id="hab26platC"></span>
+            </div>
+         </td>
+         <td>
+            <input type="text">
+         </td>
+      </tr>
+
+      <tr>
+         <td>27</td>
+         
+         <td>
+            <div class="inputContainer">
+               <input type="text" readonly onkeypress="pressReaction27A(event)"  >
+               <span class="alwaysDisplay" id="hab27platA"></span>
+            </div>
+         </td>
+         <td>
+            <div class="inputContainer">
+               <input type="text" readonly onkeypress="pressReaction27B(event)"  >
+               <span class="alwaysDisplay" id="hab27platB"></span>
+            </div>
+         </td>
+         <td>
+            <div class="inputContainer">
+               <input type="text" readonly onkeypress="pressReaction27C(event)"  >
+               <span class="alwaysDisplay" id="hab27platC"></span>
+            </div>
+         </td>
+         <td>
+            <input type="text">
+         </td>
+      </tr>
+
+      <tr>
+         <td>28</td>
+         
+         <td>
+            <div class="inputContainer">
+               <input type="text" readonly onkeypress="pressReaction28A(event)"  >
+               <span class="alwaysDisplay" id="hab28platA"></span>
+            </div>
+         </td>
+         <td>
+            <div class="inputContainer">
+               <input type="text" readonly onkeypress="pressReaction28B(event)"  >
+               <span class="alwaysDisplay" id="hab28platB"></span>
+            </div>
+         </td>
+         <td>
+            <div class="inputContainer">
+               <input type="text" readonly onkeypress="pressReaction28C(event)"  >
+               <span class="alwaysDisplay" id="hab28platC"></span>
+            </div>
+         </td>
+         <td>
+            <input type="text">
+         </td>
+      </tr>
+
+      <tr>
+         <td>29</td>
+         
+         <td>
+            <div class="inputContainer">
+               <input type="text" readonly onkeypress="pressReaction29A(event)"  >
+               <span class="alwaysDisplay" id="hab29platA"></span>
+            </div>
+         </td>
+         <td>
+            <div class="inputContainer">
+               <input type="text" readonly onkeypress="pressReaction29B(event)"  >
+               <span class="alwaysDisplay" id="hab29platB"></span>
+            </div>
+         </td>
+         <td>
+            <div class="inputContainer">
+               <input type="text" readonly onkeypress="pressReaction29C(event)"  >
+               <span class="alwaysDisplay" id="hab29platC"></span>
+            </div>
+         </td>
+         <td>
+            <input type="text">
+         </td>
+      </tr>
+
+
+      <tr>
+         <td>30</td>
+         
+         <td>
+            <div class="inputContainer">
+               <input type="text" readonly onkeypress="pressReaction30A(event)"  >
+               <span class="alwaysDisplay" id="hab30platA"></span>
+            </div>
+         </td>
+         <td>
+            <div class="inputContainer">
+               <input type="text" readonly onkeypress="pressReaction30B(event)"  >
+               <span class="alwaysDisplay" id="hab30platB"></span>
+            </div>
+         </td>
+         <td>
+            <div class="inputContainer">
+               <input type="text" readonly onkeypress="pressReaction30C(event)"  >
+               <span class="alwaysDisplay" id="hab30platC"></span>
+            </div>
+         </td>
+         <td>
+            <input type="text">
+         </td>
+      </tr>
+
+      <tr>
+         <td>31</td>
+         
+         <td>
+            <div class="inputContainer">
+               <input type="text" readonly onkeypress="pressReaction31A(event)"  >
+               <span class="alwaysDisplay" id="hab31platA"></span>
+            </div>
+         </td>
+         <td>
+            <div class="inputContainer">
+               <input type="text" readonly onkeypress="pressReaction31B(event)"  >
+               <span class="alwaysDisplay" id="hab31platB"></span>
+            </div>
+         </td>
+         <td>
+            <div class="inputContainer">
+               <input type="text" readonly onkeypress="pressReaction31C(event)"  >
+               <span class="alwaysDisplay" id="hab31platC"></span>
+            </div>
+         </td>
+         <td>
+            <input type="text">
+         </td>
+      </tr>
+
+      <tr>
+         <td>32</td>
+         
+         <td>
+            <div class="inputContainer">
+               <input type="text" readonly onkeypress="pressReaction32A(event)"  >
+               <span class="alwaysDisplay" id="hab32platA"></span>
+            </div>
+         </td>
+         <td>
+            <div class="inputContainer">
+               <input type="text" readonly onkeypress="pressReaction32B(event)"  >
+               <span class="alwaysDisplay" id="hab32platB"></span>
+            </div>
+         </td>
+         <td>
+            <div class="inputContainer">
+               <input type="text" readonly onkeypress="pressReaction32C(event)"  >
+               <span class="alwaysDisplay" id="hab32platC"></span>
+            </div>
+         </td>
+         <td>
+            <input type="text">
+         </td>
+      </tr>
+
+      <tr>
+         <td>33</td>
+         
+         <td>
+            <div class="inputContainer">
+               <input type="text" readonly onkeypress="pressReaction33A(event)"  >
+               <span class="alwaysDisplay" id="hab33platA"></span>
+            </div>
+         </td>
+         <td>
+            <div class="inputContainer">
+               <input type="text" readonly onkeypress="pressReaction33B(event)"  >
+               <span class="alwaysDisplay" id="hab33platB"></span>
+            </div>
+         </td>
+         <td>
+            <div class="inputContainer">
+               <input type="text" readonly onkeypress="pressReaction33C(event)"  >
+               <span class="alwaysDisplay" id="hab33platC"></span>
+            </div>
+         </td>
+         <td>
+            <input type="text">
+         </td>
+      </tr>   
+
+      </table>
+   </div>
+
+   <button style="margin-top: 6px; padding: 6px; border: 0px; width: 80px; font-size: 9px; font-weight: bold;" onclick="printFunction()">
+      PRINT PAGE
+   </button>    
+    
+</body>
+</html>
